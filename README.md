@@ -1,16 +1,9 @@
 # consumo_api
 
-A new Flutter project.
+Projeto Flutter - Consumo de API
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Nesse projeto é utilizando alguns pacotes do pub.dev para consumo da api MockApi.io.
+Foi desenvolvido utilizando o GetX como gerência de estado, e para acessar a api tem exemplos com o pacote http, dio e o proprio getConnect do GetX.
+Também tem um exemplo da utilização do jsonEncode e jsonDecode;
