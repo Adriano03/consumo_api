@@ -1,16 +1,15 @@
-// ignore_for_file: avoid_print
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:flutter/material.dart';
+import './params_controller.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class ParamsPage extends GetView<ParamsController> {
+  const ParamsPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Guia Acesso API'),
+        title: const Text('Guia Acesso API Params'),
         centerTitle: true,
       ),
       body: SizedBox(
@@ -19,20 +18,16 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             TextButton(
-              onPressed: () => Get.toNamed('/http'),
+              onPressed: () => Get.toNamed('params/http'),
               child: const Text('HTTP', style: TextStyle(fontSize: 20)),
             ),
             TextButton(
-              onPressed: () => Get.toNamed('/dio'),
-              child: const Text('DIO', style: TextStyle(fontSize: 20)),
-            ),
-            TextButton(
-              onPressed: () => Get.toNamed('/getConnect'),
+              onPressed: () => Get.toNamed('params/get_connect'),
               child: const Text('GetConnect', style: TextStyle(fontSize: 20)),
             ),
             TextButton(
-              onPressed: () => Get.toNamed('/params'),
-              child: const Text('Params Page', style: TextStyle(fontSize: 20)),
+              onPressed: () => Get.toNamed('params/dio_params'),
+              child: const Text('DIO', style: TextStyle(fontSize: 20)),
             ),
           ],
         ),
